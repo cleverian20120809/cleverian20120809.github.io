@@ -1,11 +1,109 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>ÎÞ±êÌâÎÄµµ</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian的个人介绍</title>
+    <style>
+        /* 全局样式重置和基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
 
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 页面容器 */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* 个人信息区域 */
+        .intro {
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 兴趣爱好区域 */
+        .hobbies {
+            margin-top: 20px;
+        }
+
+        .hobbies h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .hobby-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .hobby-item {
+            background-color: #e3f2fd;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .hobby-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
 <body>
-	My name is Ian.I am a student in Wahaha Bilingual School.
+    <div class="container">
+        <h1>Ian</h1>
+        <div class="intro">
+          <p>大家好！我是Ian，一个热爱生活、享受日常的普通人。</p>
+            <p>我喜欢在闲暇时光里做自己喜欢的事，让生活充满简单的快乐。</p>
+      </div>
+
+        <div class="hobbies">
+            <h2>我的兴趣爱好</h2>
+            <ul class="hobby-list">
+                <li class="hobby-item">🏸 打羽毛球</li>
+                <li class="hobby-item">🍚 品尝各种美食（干饭达人）</li>
+                <li class="hobby-item">🎮 玩游戏</li>
+            </ul>
+        </div>
+</div>
 </body>
 </html>
